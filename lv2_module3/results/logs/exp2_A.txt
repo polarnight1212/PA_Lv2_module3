@@ -1,0 +1,53 @@
+# 실험 2-A: min_fill_ratio 0.5, config_path ~/exp/exp2_A.yaml
+# TODO: 노드 시작 로그(설정·검출 설정 줄)를 붙인다.
+
+# stats (28구간 합계: 처리 411, 검출 16 / 마지막 11구간: 처리 203, 검출 16)
+[INFO] [1791781348.269765661] [perception_node]: 처리 0프레임 (0.0 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791781353.269839915] [perception_node]: 처리 4프레임 (0.8 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791781358.269850895] [perception_node]: 처리 1프레임 (0.2 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791781363.269853260] [perception_node]: 처리 27프레임 (5.4 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791781368.269777266] [perception_node]: 처리 0프레임 (0.0 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791781373.269777491] [perception_node]: 처리 0프레임 (0.0 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791781378.269760405] [perception_node]: 처리 1프레임 (0.2 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791781383.269775382] [perception_node]: 처리 4프레임 (0.8 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791781388.269833459] [perception_node]: 처리 0프레임 (0.0 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791781393.269895664] [perception_node]: 처리 13프레임 (2.6 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791781398.269772815] [perception_node]: 처리 40프레임 (8.0 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791781403.269759699] [perception_node]: 처리 0프레임 (0.0 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791781408.269866806] [perception_node]: 처리 21프레임 (4.2 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791781413.269853481] [perception_node]: 처리 11프레임 (2.2 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791781418.269735722] [perception_node]: 처리 10프레임 (2.0 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791781423.269932133] [perception_node]: 처리 35프레임 (7.0 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791781428.269866017] [perception_node]: 처리 41프레임 (8.2 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791781433.269874962] [perception_node]: 처리 7프레임 (1.4 FPS), 검출 1, 발행 안 함 0
+[INFO] [1791781438.269857018] [perception_node]: 처리 23프레임 (4.6 FPS), 검출 2, 발행 안 함 0
+[INFO] [1791781443.269859669] [perception_node]: 처리 6프레임 (1.2 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791781448.269847232] [perception_node]: 처리 8프레임 (1.6 FPS), 검출 1, 발행 안 함 0
+[INFO] [1791781453.269879067] [perception_node]: 처리 3프레임 (0.6 FPS), 검출 2, 발행 안 함 0
+[INFO] [1791781458.269763993] [perception_node]: 처리 21프레임 (4.2 FPS), 검출 10, 발행 안 함 0
+[INFO] [1791781463.269820265] [perception_node]: 처리 33프레임 (6.6 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791781468.269771449] [perception_node]: 처리 4프레임 (0.8 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791781473.269760803] [perception_node]: 처리 15프레임 (3.0 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791781478.269818410] [perception_node]: 처리 41프레임 (8.2 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791781483.269763938] [perception_node]: 처리 42프레임 (8.4 FPS), 검출 0, 발행 안 함 0
+
+# /target (캡처 직후 발췌)
+header:
+  stamp:
+    sec: 1791781469
+    nanosec: 401619873
+  frame_id: camera_color_optical_frame
+point:
+  x: 0.0
+  y: 0.0
+  z: 0.0
+---
+header:
+  stamp:
+    sec: 1791781469
+    nanosec: 568406494
+  frame_id: camera_color_optical_frame
+point:
+  x: 0.0
+  y: 0.0
+  z: 0.0

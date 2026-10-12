@@ -1,0 +1,16 @@
+# 실험 2-B: min_fill_ratio 0.4, config_path ~/exp/exp2_B.yaml
+[INFO] [1791781656.307243472] [perception_node]: 설정: /home/pa22/exp/exp2_B.yaml (config_path 지정)
+[INFO] [1791781656.307259111] [perception_node]: 검출 설정: HSV [98,190,25]~[118,255,230], blur 5, morph 5 (open 1, close 2), min_area 300px, bbox rotated, resize 원본, depth 끔, min_fill 0.4
+
+# stats (8구간 합계: 처리 112, 검출 112)
+[INFO] [1791781661.307392018] [perception_node]: 처리 9프레임 (1.8 FPS), 검출 9, 발행 안 함 0
+[INFO] [1791781666.307392012] [perception_node]: 처리 18프레임 (3.6 FPS), 검출 18, 발행 안 함 0
+[INFO] [1791781671.307369846] [perception_node]: 처리 0프레임 (0.0 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791781676.307381621] [perception_node]: 처리 5프레임 (1.0 FPS), 검출 5, 발행 안 함 0
+[INFO] [1791781681.307371968] [perception_node]: 처리 29프레임 (5.8 FPS), 검출 29, 발행 안 함 0
+[INFO] [1791781686.307393034] [perception_node]: 처리 24프레임 (4.8 FPS), 검출 24, 발행 안 함 0
+[INFO] [1791781691.307281978] [perception_node]: 처리 7프레임 (1.4 FPS), 검출 7, 발행 안 함 0
+[INFO] [1791781696.307409318] [perception_node]: 처리 20프레임 (4.0 FPS), 검출 20, 발행 안 함 0
+
+# /target
+# TODO: 2-B 실행 중 ros2 topic echo /target 출력을 붙인다.

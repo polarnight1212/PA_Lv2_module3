@@ -1,0 +1,78 @@
+# 토픽 구성 확인 (2026-10-12, PC, D435 USB 직결)
+# 주의: 아래 node list / topic info 출력은 이전 실행의 rosbag2_player가 남아 있던 시점이라
+#       /target 발행자가 2개로 보인다. 이후 bag 재생을 끄고 ros2 daemon stop 후 다시 실행했다.
+
+$ ros2 node list
+/camera/camera
+/perception_node
+/rosbag2_player
+/rqt_gui_cpp_node_14469
+
+$ ros2 topic info /target -v
+Type: geometry_msgs/msg/PointStamped
+Publisher count: 2
+
+Node name: perception_node
+Node namespace: /
+Topic type: geometry_msgs/msg/PointStamped
+Endpoint type: PUBLISHER
+QoS profile:
+  Reliability: BEST_EFFORT
+  History (Depth): KEEP_LAST (1)
+  Durability: VOLATILE
+
+Node name: rosbag2_player
+(이전 실행 잔여, 실험에는 사용하지 않음)
+
+$ ros2 topic info /camera/camera/color/image_raw -v
+Type: sensor_msgs/msg/Image
+Publisher count: 1
+
+Node name: camera
+Node namespace: /camera
+Endpoint type: PUBLISHER
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: TRANSIENT_LOCAL
+
+Subscription count: 2
+Node name: perception_node   (BEST_EFFORT, KEEP_LAST 1)
+Node name: rqt_gui_cpp_node_14469   (BEST_EFFORT, KEEP_LAST 5)
+
+# perception_node 시작 로그 (debug 발행 켬)
+[INFO] [1791771552.257285500] [perception_node]: 구독: /camera/camera/color/image_raw -> 발행: /target, /target/debug_image, /target/debug_mask
+
+$ ros2 topic hz /camera/camera/color/image_raw
+average rate: 29.978
+	min: 0.021s max: 0.045s std dev: 0.00188s window: 1678
+
+$ ros2 topic echo /target --once
+header:
+  stamp:
+    sec: 1791773323
+    nanosec: 893380371
+  frame_id: camera_color_optical_frame
+point:
+  x: 0.33395233154296877
+  y: 0.08450126647949219
+  z: 0.11332356770833334
+
+$ ros2 topic echo /camera/camera/color/image_raw --no-arr --once
+header:
+  stamp:
+    sec: 1791773324
+    nanosec: 827381104
+  frame_id: camera_color_optical_frame
+height: 480
+width: 640
+encoding: rgb8
+is_bigendian: 0
+step: 1920
+data: '<sequence type: uint8, length: 921600>'
+
+# RELIABLE 구독 비교용: ros2 bag record 결과
+$ ros2 bag info ~/exp/exp_input
+Duration:          19.595242438s
+Messages:          589
+Topic information: Topic: /camera/camera/color/image_raw | Type: sensor_msgs/msg/Image | Count: 589

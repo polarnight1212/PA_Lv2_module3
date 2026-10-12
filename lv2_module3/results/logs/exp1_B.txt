@@ -1,0 +1,3 @@
+# 실험 1-B: S 하한 120, config_path ~/exp/exp1_B.yaml
+# TODO: 노드 시작 로그(설정·검출 설정 줄), stats 로그, /target 출력을 붙인다.
+#       저장해 두지 않았다면 그 사실을 적고, Overlay 캡처(exp1_B.png)의 표시값만 근거로 사용한다.

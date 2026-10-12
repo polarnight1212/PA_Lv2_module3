@@ -1,0 +1,43 @@
+# 실험 1-A: S 하한 190, config_path ~/exp/exp1_A.yaml
+# 설정 적용 확인 (같은 exp1_A.yaml로 실행한 시작 로그)
+[INFO] [1791771382.921505986] [perception_node]: 설정: /home/pa22/exp/exp1_A.yaml (config_path 지정)
+[INFO] [1791771382.921519780] [perception_node]: 검출 설정: HSV [98,190,25]~[118,255,230], blur 5, morph 5 (open 1, close 2), min_area 300px, bbox rotated, resize 원본, depth 끔, min_fill 0.5
+
+# 실험 구간 stats (16구간 합계: 처리 165, 검출 0)
+[INFO] [1791776055.659524903] [perception_node]: 처리 20프레임 (4.0 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791776060.659539915] [perception_node]: 처리 0프레임 (0.0 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791776065.659561423] [perception_node]: 처리 12프레임 (2.4 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791776070.659434144] [perception_node]: 처리 1프레임 (0.2 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791776075.659512510] [perception_node]: 처리 3프레임 (0.6 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791776080.659519296] [perception_node]: 처리 6프레임 (1.2 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791776085.659526395] [perception_node]: 처리 32프레임 (6.4 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791776090.659518928] [perception_node]: 처리 2프레임 (0.4 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791776095.659374599] [perception_node]: 처리 10프레임 (2.0 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791776100.659502322] [perception_node]: 처리 9프레임 (1.8 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791776105.659576120] [perception_node]: 처리 9프레임 (1.8 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791776110.659419521] [perception_node]: 처리 12프레임 (2.4 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791776115.659480490] [perception_node]: 처리 21프레임 (4.2 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791776120.659610599] [perception_node]: 처리 13프레임 (2.6 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791776125.659411210] [perception_node]: 처리 3프레임 (0.6 FPS), 검출 0, 발행 안 함 0
+[INFO] [1791776130.659542913] [perception_node]: 처리 12프레임 (2.4 FPS), 검출 0, 발행 안 함 0
+
+# /target (발췌)
+header:
+  stamp:
+    sec: 1791776113
+    nanosec: 841946533
+  frame_id: camera_color_optical_frame
+point:
+  x: 0.0
+  y: 0.0
+  z: 0.0
+---
+header:
+  stamp:
+    sec: 1791776114
+    nanosec: 308972412
+  frame_id: camera_color_optical_frame
+point:
+  x: 0.0
+  y: 0.0
+  z: 0.0
